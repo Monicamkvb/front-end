@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 2</title>
+    <!-- metodo 1 - link (puxa arquivo externo)-->
+    <!-- metodo 2 - tag style (puxa tag para abrir um espaço no html)-->
+     <!-- metodo 3 - atributo style (puxa atributo direto no elemento)-->
+
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        .para{
+            /* color - cor da fonte */
+            color: red;
+            /* font-family - tipografia */
+            font-family: Arial, Helvetica, sans-serif;
+            /* background color - cor de fundo */
+            background-color: aquamarine;
+        }
+
+        body{
+            background-color: bisque;
+        }
+
+        h1{
+            color: purple;
+            /* text-align - alinhar texto no centro */
+            text-align: center;
+            /* margin - margem externa */
+            margin: 20 px;
+            /* padding - margem interna */
+            padding: 20px;
+            /* border - borda (largura, tipo, cor) */
+            border: 1px solid white;
+
+        }
+
+        #destacado{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="destacado">TITULO</h1>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse aliquam molestias nulla quidem magnam voluptatem tenetur beatae animi quam, corporis, doloribus nisi. Odio, officia corrupti facilis nulla officiis distinctio?</p>
+
+    <h1>TITULO2</h1>
+    <h2>subtítulo</h2>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequuntur temporibus quidem repellendus. Tenetur ipsum hic tempora delectus ab debitis nobis numquam adipisci deleniti eum impedit atque ad, veritatis quasi.</p>
+    
+    <img src="creta.jpg" alt="">
+</body>
+</html>
