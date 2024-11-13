@@ -11,6 +11,7 @@ header{
    padding: 10px 0px;
    display: flex;
    justify-content: end;
+   font-weight: bold
 }
 
 nav{
@@ -51,15 +52,34 @@ a{
 #artigo{
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 #agenda, #servicos{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(195, 195, 195);
 }
+
 .tituloArtigo{
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 40px;
     background-color: black;
     color: white;
+    font-weight: bold
+}
 
+#introducao{
+    width: 100%;
+    background-color: rgb(195, 195, 195);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold
+}
+
+#textoArtigo{
+    margin: 20px;
 }
