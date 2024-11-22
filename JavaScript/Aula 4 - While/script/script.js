@@ -17,11 +17,20 @@ function testes(){
 // testes()
 
 function carregarCatalogo(){
-    for (let i = 0;i < 8;i++){
+    var livros = [
+        ['livros/cidadesdepapel.jpg','CIDADES DE PAPEL'],
+        ['livros/harrypotter.jpg','Harry Potter cálice de fogo'],
+        ['livros/desventurasemserie.jpg','Desventuras em série'],
+        ['livros/simplesmenteacontece.jpg','Simplesmente acontece'],
+        ['livros/omanifesto.jpg','O manifesto'],
+        ['livros/omeninodopijama.jpg','O menino do pijama listrado']
+    ]
+
+    livros.forEach(cadaLivro =>{
         document.getElementById('catalogo').innerHTML += `
           <div class="livro">
-                <img src="livros/cidade.jpg" alt="">
-                <h4>CIDADES DE PAPEL</h4>
+                <img src="${cadaLivro[0]}" alt="">
+                <h4>${cadaLivro[1]}</h4>
 
                 <button>
                     Adicionar
@@ -29,7 +38,7 @@ function carregarCatalogo(){
                 </button>
         </div>
         `
-    }
+    })
 }
 
 carregarCatalogo()
