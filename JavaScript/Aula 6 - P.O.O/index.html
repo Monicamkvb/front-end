@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+
+        .post{
+            width: 90%;
+            height: auto;
+            background-color: rgb(69, 72, 71);
+            color:white;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="pensamento">
+    <button onclick="postarFeed()">POSTAR</button>
+    <div id="resposta"></div>
+
+
+    <div id="bio" class="bio">
+        <h3>Bio:</h3>
+        <p id="bio-text">Aqui vai a bio do usuário.</p>
+    </div>
+
+
+    <script src="scripts/script2.js"></script>
+</body>
