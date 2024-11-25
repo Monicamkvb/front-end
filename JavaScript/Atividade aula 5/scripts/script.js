@@ -16,7 +16,7 @@ function carregarCatalogo(){
         ['filmes/magicodeoz.jpg','O MÁGICO DE OZ'],
         ['filmes/matrix.jpg','MATRIX'],
         ['filmes/tinkerbell.jpg','TINKER BELL'],
-        ['filmes/culpamia.jpg','CULPA MIA']
+        ['filmes/culpamia.jpg','CULPA MIA'],
         ['filmes/barbie.jpg','BARBIE']
         
     ]
