@@ -11,7 +11,7 @@ class Categoria{
 
 lista_categorias.push(new Categoria('SUCOS','images/suco.jpg','Os mais diversos sucos! Laranja, maracúja e muito mais.','Suco por MK Bebidas'))
 lista_categorias.push(new Categoria('REFRIGERANTE','images/refri.jpg','Uma explosão de sabor e refrescância em cada gole. A escolha perfeita para todos os momentos!','Refrigerante por MK Bebidas'))
-lista_categorias.push(new Categoria('BATIDA DE FRUTAS','images/suco.jpg','Dê um toque tropical ao seu paladar com nossa deliciosa Batida de Frutas. A mistura perfeita de frutas frescas e cachaça para um momento de prazer único e exótico.','Batida de frutas por MK Bebidas'))
+lista_categorias.push(new Categoria('VINHO','images/vinho.jpg','Dê um toque tropical ao seu paladar com nosso delicioso vinho. A bebida perfeita para um momento de prazer único e exótico.','Vinho por MK Bebidas'))
 
 lista_categorias.forEach(categoria => {
     document.querySelector('#categoriaItems').innerHTML += `
