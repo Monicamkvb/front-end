@@ -30,7 +30,7 @@ function logar(){
                alert('Login efetuado')
                localStorage.setItem('nome',nome_digitado)
 
-               window.location = '/home.html' 
+               window.location = './home.html' 
             }else{
                document.querySelector("#resposta").innerHTML = "Usuario e senha incorreto"
             }
