@@ -1,42 +1,66 @@
-const receita = {
-    'Nome' : 'salgado, doce, sucos',
-    'Ingredientes' : 'Lorem',
+// Função para mostrar a receita selecionada
+function mostrarReceita(categoria) {
+    // Esconde todas as receitas
+    const receitas = document.querySelectorAll('.recipe');
+    receitas.forEach(function(receita) {
+        receita.style.display = 'none'; // Esconde a receita
+    });
+
+    // Exibe a receita da categoria selecionada
+    const receitaSelecionada = document.getElementById(categoria);
+    if (receitaSelecionada) {
+        receitaSelecionada.style.display = 'block'; // Exibe a receita
+    }
 }
 
-console.log(receita)
-console.log(receita.Nome)
-
-const nomesReceita = ['Patê de frango','Torta de limão','Suco de maracujá']
-
-const listaReceita = {
-   'salgado' : [
-    {
-        'nome': 'Patê de frango',
-        'Ingredientes' : 'Lorem'
+// Exemplo de como adicionar as receitas com base nas categorias
+const receitas = {
+    "salgado": {
+        nome: "Pão de Queijo",
+        ingredientes: "Polvilho, queijo, leite, óleo, ovos.",
+        preparo: "Misture tudo, modele os pães e asse até dourar."
     },
-    {
-        'nome' : 'Bruxa de Blair',
-        'Ingredientes' : 'Lorem'
+    "doce": {
+        nome: "Brigadeiro",
+        ingredientes: "Leite condensado, achocolatado, manteiga.",
+        preparo: "Misture tudo e cozinhe até atingir o ponto de brigadeiro."
     },
-   ],
-   'Doce' : [
-    {
-        'nome': 'Torta de limão',
-        'Ingredientes': 'Lorem'
+    "sucos": {
+        nome: "Suco de Laranja",
+        ingredientes: "Laranjas, açúcar, água.",
+        preparo: "Esprema as laranjas e adicione açúcar e água a gosto."
     }
-   ],
-   'Suco' : [
-    {
-        'nome' : 'Suco de maracujá',
-        'Ingredientes': 'Maracujá, água e açúcar'
+};
+
+// Função para criar as receitas 
+function criarReceitas() {
+    for (let categoria in receitas) {
+        const receita = receitas[categoria];
+
+        // Criando o elemento da receita
+        const divReceita = document.createElement('div');
+        divReceita.id = categoria;
+        divReceita.classList.add('recipe');
+        divReceita.style.display = 'none'; 
+
+        // Adicionando conteúdo à receita
+        const titulo = document.createElement('h2');
+        titulo.textContent = receita.nome;
+        divReceita.appendChild(titulo);
+
+        const ingredientes = document.createElement('p');
+        ingredientes.innerHTML = `<strong>Ingredientes:</strong> ${receita.ingredientes}`;
+        divReceita.appendChild(ingredientes);
+
+        const preparo = document.createElement('p');
+        preparo.innerHTML = `<strong>Modo de Preparo:</strong> ${receita.preparo}`;
+        divReceita.appendChild(preparo);
+
+        // Adiciona a receita ao corpo da página
+        document.body.appendChild(divReceita);
     }
-   ]
 }
 
-const resultado = lista.receita.map((elemento) => {
-    console.log(elemento.nome)
-    document.querySelector('body').innerHTML = `
-       <h3> ${elemento.nome} -</h3>
-    `
-})
+// Chama a função para criar as receitas ao carregar o JavaScript
+criarReceitas();
 
