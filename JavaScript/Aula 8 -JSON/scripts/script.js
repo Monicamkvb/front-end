@@ -15,7 +15,7 @@ function logar(){
     let senha_salva = ''
     let login = false
 
-    fetch('dado.json').then((response) => {
+    fetch('dados.json').then((response) => {
         return response.json()
 }).then((dados) => {
         dados.usuarios.map((informacoes) => {
