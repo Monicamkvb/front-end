@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #092f57;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 1em 0;
+    height: 150px;
+    align-items: center;
+    background: #f0f0f0;
+    position: relative;
+}
+
+.carousel-item {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    animation: carousel-animation 9s infinite;
+}
+
+@keyframes carousel-animation {
+    0%, 33% {
+        transform: translateX(0);
+    }
+    34%, 66% {
+        transform: translateX(-100%);
+    }
+    67%, 100% {
+        transform: translateX(-200%);
+    }
+}
+
+#faq {
+    padding: 1em;
+    background: #f9f9f9;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.faq-item {
+    margin: 1em 0;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+/* Estilos do catálogo */
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.course-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.course-item:hover {
+    transform: scale(1.05);
+    background: #e6f7ff;
+}
+
+.course-item a {
+    display: block;
+    margin-top: 0.5em;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+/* Estilos do cadastro */
+#register {
+    padding: 2em;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button:hover {
+    background: #005bb5;
+}
