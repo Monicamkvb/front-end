@@ -55,6 +55,14 @@ a{
     justify-content: center;
 }
 
+.tituloArtigo{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold
+}
+
 #agenda, #servicos{
     width: 50%;
     display: flex;
@@ -63,13 +71,6 @@ a{
     background-color: rgb(195, 195, 195);
 }
 
-.tituloArtigo{
-    width: 100%;
-    padding: 10px 40px;
-    background-color: black;
-    color: white;
-    font-weight: bold
-}
 
 #introducao{
     width: 100%;
@@ -89,6 +90,7 @@ footer{
    background-color: black;
    padding: 10px 50px 100px 100px;
    display: flex;
-   justify-content: end;
+   justify-content: center;
    font-weight: bold
+
 }
