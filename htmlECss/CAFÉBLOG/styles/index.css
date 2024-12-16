@@ -78,3 +78,13 @@ main img {
     border-radius: 30px;
 }
 
+footer{
+    background-color:rgb(152, 123, 93);
+    color: black;
+    padding: 30px 0;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
