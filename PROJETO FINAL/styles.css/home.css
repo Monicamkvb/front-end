@@ -30,23 +30,6 @@ header nav ul li a {
     font-weight: bold;
 }
 
-#carousel {
-    display: flex;
-    overflow: hidden;
-    margin: 1em 0;
-    height: 150px;
-    align-items: center;
-    background: #f0f0f0;
-    position: relative;
-}
-
-.carousel-item {
-    flex: none;
-    width: 100%;
-    text-align: center;
-    font-size: 1.2em;
-    animation: carousel-animation 9s infinite;
-}
 
 @keyframes carousel-animation {
     0%, 33% {
@@ -108,7 +91,7 @@ footer {
 .course-item a {
     display: block;
     margin-top: 0.5em;
-    color: #0073e6;
+    color:  #092f57;
     text-decoration: none;
 }
 
@@ -133,7 +116,7 @@ form input {
 }
 
 form button {
-    background: #0073e6;
+    background:  #092f57;
     color: white;
     border: none;
     padding: 0.7em 1.5em;
@@ -143,5 +126,127 @@ form button {
 }
 
 form button:hover {
-    background: #005bb5;
+    background:  #092f57;
+}
+
+
+/* Reset Básico */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+.header {
+    background:  #092f57;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .nav ul {
+    list-style: none;
+    display: flex;
+}
+.header .nav li {
+    margin: 0 15px;
+}
+.header .nav a {
+    color: white;
+    text-decoration: none;
+}
+.header .cta-button {
+    background: #00b4d8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: #caf0f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.hero .cta-button {
+    background: #0077b6;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Benefícios */
+.benefits {
+    padding: 50px 0;
+    text-align: center;
+    background-color:white;
+    color: black;
+    border-radius: 100%;
+}
+.benefits-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.benefit-item {
+    width: 30%;
+}
+.benefit-item img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Cursos */
+.courses {
+    background: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.course-item {
+    width: 30%;
+}
+
+/* Depoimentos */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+}
+.testimonial-item {
+    margin: 20px 0;
+}
+
+/* Rodapé */
+.footer {
+    background:  #092f57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
