@@ -1,0 +1,1 @@
+select * from lojinha where cor = "preta";

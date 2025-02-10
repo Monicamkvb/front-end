@@ -1,0 +1,1 @@
+SELECT * FROM correcao_cadastro.pessoas;
