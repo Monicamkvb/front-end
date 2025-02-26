@@ -15,7 +15,9 @@ data_pedido DATE NOT NULL,
 total INT NOT NULL,
 status_pedido VARCHAR(45),
 id_cliente INT NOT NULL,
-FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente)
+FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
+id_produto INT NOT NULL,
+FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
 
 create table fornecedor(
@@ -42,6 +44,4 @@ valor_pago DECIMAL(6,2),
 id_pedido INT NOT NULL,
 FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido)
 );
-
-
 
