@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIVRARIA BEM ESTAR</title>
-    <!-- Link do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEJ6i8d5v2wA2p5J4rf0Vh5X1Vh1O3MslMlDiH3ncnzMlhFss6t8kA9SlnJ7C" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-
 <body>
-
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="navbar-brand" href="index.html">LIVROS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="pages/catalogo.html">Gêneros</a>
+                            <a class="nav-link" href="pages/catalogo.html">Gêneros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="pages/carrinho.html">Carrinho</a>
+                            <a class="nav-link" href="pages/carrinho.html">Carrinho</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Perfil</a>
+                            <a class="nav-link" href="#">Perfil</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex ms-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Procurar livro" aria-label="Search">
                         <button class="btn btn-outline-danger" type="submit">Pesquisar</button>
                     </form>
@@ -42,47 +40,46 @@
     </header>
 
     <main>
-        <section id="categorias" class="container-fluid d-flex flex-column align-items-center">
-            <h2>LIVROS</h2>
-        </section>
-
-        <div class="row justify-content-center">
-            <!-- Livro 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/pequeno principe.jpg" class="card-img-top" alt="O Pequeno Príncipe">
-                    <div class="card-body">
-                        <h5 class="card-title">O Pequeno Príncipe</h5>
-                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#livro1Modal">Ver Detalhes</button>
+        <section id="categorias" class="container-fluid text-center">
+            <h2>LIVROS EM DESTAQUE</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/pequeno principe.jpg" class="card-img-top" alt="O Pequeno Príncipe">
+                        <div class="card-body">
+                            <h5 class="card-title">O Pequeno Príncipe</h5>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#livroModal">Ver Detalhes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    
-        <div class="modal fade" id="livro1Modal" tabindex="-1" aria-labelledby="livro1ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <div class="modal fade" id="livroModal" tabindex="-1" aria-labelledby="livroModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="livro1ModalLabel">O Pequeno Príncipe</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="livroModalLabel">O Pequeno Príncipe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="images/pequeno principe.jpg" alt="Capa do Livro">
-                        <p><strong>Autor:</strong> Antoine de Saint-Exupéry</p>
-                        <p><strong>Descrição:</strong> O Pequeno Príncipe é um conto filosófico sobre um piloto que conhece um jovem príncipe de outro planeta. Em suas viagens, o príncipe aprende lições de vida sobre amor, amizade e o que é realmente importante na vida.</p>
+                        <h6>Autor: Antoine de Saint-Exupéry</h6>
+                        <p><strong>Descrição:</strong> "O Pequeno Príncipe" é uma história encantadora sobre um pequeno príncipe que viaja por diferentes planetas, conhecendo pessoas e aprendendo valiosas lições de vida. Com belíssimas ilustrações e uma mensagem profunda, o livro é uma reflexão sobre a importância da amizade, da inocência e da verdadeira essência da vida.</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Comprar Agora</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0r5iCwEEfKk2Yyg9x5p6+L7wdo9gA5S/zo1D3wr9x17/xD3g" crossorigin="anonymous"></script>
-</body>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 LIVRARIA BEM ESTAR. Todos os direitos reservados.</p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
+
