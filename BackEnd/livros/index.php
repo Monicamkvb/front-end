@@ -13,7 +13,7 @@
 
 <body>
 
-    <!-- Navegação -->
+
     <header>
         <nav class="navbar navbar-expand-lg bg-dark text-light">
             <div class="container">
@@ -41,7 +41,6 @@
         </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
         <section id="categorias" class="container-fluid d-flex flex-column align-items-center">
             <h2>LIVROS</h2>
@@ -60,7 +59,7 @@
             </div>
         </div>
 
-        <!-- Modal para o Livro -->
+    
         <div class="modal fade" id="livro1Modal" tabindex="-1" aria-labelledby="livro1ModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -82,7 +81,6 @@
         </div>
     </main>
 
-    <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pzjw8f+ua7Kw1TIq0r5iCwEEfKk2Yyg9x5p6+L7wdo9gA5S/zo1D3wr9x17/xD3g" crossorigin="anonymous"></script>
 </body>
